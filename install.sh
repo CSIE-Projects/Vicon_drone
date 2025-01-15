@@ -1,2 +1,6 @@
 #!/bin/bash
-sudo pip install -r requirements.txt
+
+sudo ./service_creator.sh
+PATH="${PATH:+${PATH}:}$HOME/.local/bin"
+pip install MAVProxy
+pip install -r requirements.txt
